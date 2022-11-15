@@ -1,0 +1,64 @@
+.App {
+    min-height: 100vh;
+    background-color: rgb(60, 60, 60);
+}
+
+.App.won {
+    background-color: rgb(60, 150, 60);
+}
+
+.App.lost {
+    background-color: rgb(150, 60, 60);
+}
+
+.newGame {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+}
+
+.board {
+    padding-top: 10vh;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    gap: 2vh;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    gap: 0.56vw;
+}
+
+.letter {
+    display: flex;
+    border: 3px solid rgb(100, 100, 100);
+    border-radius: 10px;
+
+    height: 10vh;
+    width: 10vh;
+    max-height: 50px;
+    max-width: 50px;
+
+    font-size: 40px;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+}
+
+.letter.correct {
+    background-color: green;
+}
+
+.letter.incorrect {
+    background-color: rgb(30, 30, 30);
+}
+
+.letter.misplaced {
+    background-color: darkkhaki;
+}
